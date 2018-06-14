@@ -23,7 +23,7 @@ def jawn(page):
         if page in pages:
             return fill_page(page=page, title=pages[page])
         else:
-            return "Not found!", 404
+            return render_template('404.html.j2', page='404', title='Page Not Found', pages=pages), 404
 
 
 if __name__ == "__main__":
