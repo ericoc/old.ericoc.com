@@ -1,0 +1,13 @@
+[Unit]
+Description=UWSGI for App
+After=network.target
+
+[Service]
+User=app
+Group=www-data
+WorkingDirectory=/home/app/app
+ExecStart=/home/app/app/venv/bin/uwsgi --ini uwsgi.ini
+StandardError=/var/log/uwsgi/ericoc.log
+
+[Install]
+WantedBy=multi-user.target
