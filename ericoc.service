@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=app
 Group=www-data
-WorkingDirectory=/home/app/app
-ExecStart=/home/app/app/venv/bin/uwsgi --ini uwsgi.ini
+WorkingDirectory=/srv/python/app
+ExecStart=/srv/python/app/venv/bin/uwsgi --ini /srv/python/uwsgi.ini
 StandardError=/var/log/uwsgi/ericoc.log
 
 [Install]
