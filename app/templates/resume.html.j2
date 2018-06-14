@@ -1,6 +1,11 @@
 {% extends "index.html.j2" %}
 {% block title %}{% if title %} - {{ title }}{% endif %}{% endblock %}
 {% block description %}{% if title %} - {{ title }}{% endif %}{% endblock %}
+{% block nav %}
+            {% for tab, tab_name in pages.items() %}
+                <li><a {% if page == tab %}id="current"{% else %}href="/{{ tab }}"{% endif %}>{{ tab_name }}</a></li>
+            {% endfor %}
+{% endblock %}
 {% block content %}
             <div id="reslinks">
                 <a href="/ericoc_resume.pdf">PDF</a> | <a href="/ericoc_resume.docx">DOCX</a> | <a href="/ericoc_resume.txt">TXT</a>

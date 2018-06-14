@@ -8,7 +8,7 @@ ericoc = Flask(__name__)
 
 def fill_page(page, title):
     template = page + '.html.j2'
-    return render_template(template, page=page, title=title)
+    return render_template(template, page=page, title=title, pages=pages)
 
 
 @ericoc.route('/')
