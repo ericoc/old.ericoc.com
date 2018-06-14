@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, url_for, render_template
 from pprint import pprint
 
 pages = { 'projects': 'Projects', 'about': 'About', 'resume': 'Résumé' }
@@ -8,14 +8,13 @@ ericoc = Flask(__name__)
 
 @ericoc.route('/')
 def index():
-    return "Hello, world!"
-
+    return render_template('index.html.j2', page_title=None)
 
 @ericoc.route('/<page>/')
 def jawn(page):
 
         if page in pages:
-            return "Hello, {}!".format(pages[page])
+            return render_template('index.html.j2', page_title=pages[page])
         else:
             return "Not found!", 404
 
