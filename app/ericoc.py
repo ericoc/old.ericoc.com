@@ -6,17 +6,25 @@ pages = { 'projects': 'Projects', 'about': 'About', 'resume': 'Résumé' }
 ericoc = Flask(__name__)
 
 
+def fill_page(page, title):
+    template = page + '.html.j2'
+    return render_template(template, page=page, title=title)
+
+
 @ericoc.route('/')
 def index():
-    return render_template('index.html.j2', page_title=None)
+    default_page = 'about'
+    return fill_page(page=default_page, title=None)
+
 
 @ericoc.route('/<page>/')
 def jawn(page):
 
         if page in pages:
-            return render_template('index.html.j2', page_title=pages[page])
+            return fill_page(page=page, title=pages[page])
         else:
             return "Not found!", 404
+
 
 if __name__ == "__main__":
     ericoc.run() # this is never run
