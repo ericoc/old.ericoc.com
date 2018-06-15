@@ -22,7 +22,12 @@ def jawn(page):
         if page in pages:
             return fill_page(page=page, title=pages[page])
         else:
-            return fill_page(page='404', title='Page Not Found', code=404)
+            return page_not_found(page);
+
+
+@ericoc.errorhandler(404)
+def page_not_found(error):
+    return fill_page(page='404', title='Page Not Found', code=404)
 
 
 if __name__ == "__main__":
