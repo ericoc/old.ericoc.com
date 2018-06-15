@@ -1,9 +1,3 @@
-{% extends "index.html.j2" %}
-{% from "macros.html.j2" import show_title, nav_tabs %}
-{% block description %}{{ show_title(title) }}{% endblock %}
-{% block title %}{{ show_title(title) }}{% endblock %}
-{% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
-{%- block content %}
             <div id="reslinks">
                 <a href="/static/ericoc_resume.pdf">PDF</a> | <a href="/static/ericoc_resume.docx">DOCX</a> | <a href="/static/ericoc_resume.txt">TXT</a>
             </div>
@@ -84,4 +78,3 @@
                 <i>Networking & Security Management (A.A.S.)</i><br>
                 Newport News, VA (September 2008 - May 2010)
             </p>
-{%- endblock %}

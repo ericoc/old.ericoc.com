@@ -1,9 +1,3 @@
-{% extends "index.html.j2" %}
-{% from "macros.html.j2" import show_title, nav_tabs %}
-{% block description %}{{ show_title(title) }}{% endblock %}
-{% block title %}{{ show_title(title) }}{% endblock %}
-{% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
-{%- block content %}
             <h2>
                 <a id="indegopy" href="https://github.com/ericoc/indego-py-lib" target="_blank">Indego Bike Share Python Library</a>
             </h2>
@@ -67,4 +61,3 @@
                 <li>This was deprecated due to a number of reasons including unmaintainability. URL shorteners attract a large amount of abuse and the public repository no longer matches the numerous changes (such as recaptcha) that were added to avoid continued spam.</li>
                 <li>The website itself will stay up as long as possible, but further changes are not going to be made public since the repository is no longer in-sync.</li>
             </ul>
-{%- endblock %}
