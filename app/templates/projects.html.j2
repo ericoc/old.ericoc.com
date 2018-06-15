@@ -1,11 +1,8 @@
 {% extends "index.html.j2" %}
 {% block title %}{% if title %} - {{ title }}{% endif %}{% endblock %}
 {% block description %}{% if title %} - {{ title }}{% endif %}{% endblock %}
-{% block nav %}
-            {% for tab, tab_name in pages.items() %}
-                <li><a {% if page == tab %}id="current"{% else %}href="/{{ tab }}"{% endif %}>{{ tab_name }}</a></li>
-            {% endfor %}
-{% endblock %}
+{% from "macros.html.j2" import nav_tabs %}
+{% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
 {% block content %}
             <h2>
                 <a id="indegopy" href="https://github.com/ericoc/indego-py-lib" target="_blank">Indego Bike Share Python Library</a>

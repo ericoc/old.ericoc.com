@@ -1,11 +1,8 @@
 {% extends "index.html.j2" %}
 {% block title %} - Page Not Found{% endblock %}
 {% block description %} - Page Not Found{% endblock %}
-{% block nav %}
-            {% for tab, tab_name in pages.items() %}
-                <li><a href="/{{ tab }}">{{ tab_name }}</a></li>
-            {% endfor %}
-{% endblock %}
+{% from "macros.html.j2" import nav_tabs %}
+{% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
 {% block content %}
                 <center>
                     <h2>Sorry!</h2>

@@ -1,11 +1,8 @@
 {% extends "index.html.j2" %}
 {% block title %}{% if title %} - {{ title }}{% endif %}{% endblock %}
 {% block description %}{% if title %} - {{ title }}{% endif %}{% endblock %}
-{% block nav %}
-            {% for tab, tab_name in pages.items() %}
-                <li><a {% if page == tab %}id="current"{% else %}href="/{{ tab }}"{% endif %}>{{ tab_name }}</a></li>
-            {% endfor %}
-{% endblock %}
+{% from "macros.html.j2" import nav_tabs %}
+{% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
 {% block content %}
             <p>
                 My name is Eric, but I go by "ericoc" most places online.
