@@ -1,14 +1,13 @@
-from flask import Flask, request, url_for, render_template
-from pprint import pprint
+from flask import Flask, render_template
 
 pages = { 'projects': 'Projects', 'about': 'About', 'resume': 'Résumé' }
 
 ericoc = Flask(__name__)
 
 
-def fill_page(page, title):
+def fill_page(page, title, code=200):
     template = page + '.html.j2'
-    return render_template(template, page=page, title=title, pages=pages)
+    return render_template(template, page=page, title=title, pages=pages), code
 
 
 @ericoc.route('/')
@@ -23,8 +22,8 @@ def jawn(page):
         if page in pages:
             return fill_page(page=page, title=pages[page])
         else:
-            return render_template('404.html.j2', page='404', title='Page Not Found', pages=pages), 404
+            return fill_page(page='404', title='Page Not Found', code=404)
 
 
 if __name__ == "__main__":
-    ericoc.run() # this is never run
+    ericoc.run()
