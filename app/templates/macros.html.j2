@@ -1,5 +1,9 @@
-{% macro nav_tabs(page, pages) %}
-        {% for tab, tab_name in pages.items() %}
+{%- macro show_title(title) -%}
+{% if title %} - {{ title }}{% endif %}
+{%- endmacro -%}
+
+{%- macro nav_tabs(page, pages) %}
+        {%- for tab, tab_name in pages.items() %}
                 <li><a {% if page == tab %}id="current"{% else %}href="/{{ tab }}"{% endif %}>{{ tab_name }}</a></li>
-        {% endfor %}
-{% endmacro %}
+        {%- endfor %}
+{%- endmacro %}

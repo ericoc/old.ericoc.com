@@ -1,11 +1,11 @@
 {% extends "index.html.j2" %}
-{% block title %} - Page Not Found{% endblock %}
-{% block description %} - Page Not Found{% endblock %}
-{% from "macros.html.j2" import nav_tabs %}
+{% from "macros.html.j2" import show_title, nav_tabs %}
+{% block description %}{{ show_title(title) }}{% endblock %}
+{% block title %}{{ show_title(title) }}{% endblock %}
 {% block nav %}{{ nav_tabs(page, pages) }}{% endblock %}
-{% block content %}
+{%- block content %}
                 <center>
                     <h2>Sorry!</h2>
                     Unfortunately, that page could not be found.
                 </center>
-{% endblock %}
+{%- endblock %}
