@@ -1,5 +1,9 @@
             <div id="reslinks">
-                <a href="/static/ericoc_resume.pdf">PDF</a> | <a href="/static/ericoc_resume.docx">DOCX</a> | <a href="/static/ericoc_resume.txt">TXT</a>
+            {%- set resume_basename = 'ericoc_resume' -%}
+              {%- for resume_format in ['pdf', 'docx', 'txt'] -%}
+                {%- set resume_filename = resume_basename + '.' + resume_format -%}
+                <a href="{{ url_for('static', filename=resume_filename) }}">{{ resume_format | upper }}</a>{% if not loop.last %} | {% endif %}
+              {%- endfor -%}
             </div>
             <br><hr><br>
             <h2>Eric O'Callaghan</h2>
