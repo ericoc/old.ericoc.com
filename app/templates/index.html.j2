@@ -15,13 +15,13 @@
     <body>
         <div id="logo">
             <h1>
-                <a href="/"><span id="logoblue">Eric O'C</span>allaghan</a>
+                <a href="{{ url_for('index') }}"><span id="logoblue">Eric O'C</span>allaghan</a>
             </h1>
         </div>
         <div id="nav">
             <ul id="navlist">
               {%- for tab, tab_name in pages.items() %}
-                <li><a {% if page == tab %}id="current"{% else %}href="/{{ tab }}"{% endif %}>{{ tab_name }}</a></li>
+                <li><a {% if page == tab %}id="current"{% else %}href="{{ url_for('specific', page=tab) }}"{% endif %}>{{ tab_name }}</a></li>
               {%- endfor %}
             </ul>
         </div><br>
