@@ -7,10 +7,10 @@
         <meta name="description" content="Eric O'Callaghan{% if title %} - {{ title }}{% endif %}">
         <meta name="keywords" content="Eric O'Callaghan, Eric OCallaghan, EricOC, Eric OC">
         <title>Eric O'Callaghan{% if title %} - {{ title }}{% endif %}</title>
-        <link href="/static/fonts.css" rel="stylesheet" type="text/css">
-        <link href="/static/ericoc.css" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="/static/favicon.ico">
-        <link rel="apple-touch-icon" href="/static/icon.png">
+        <link href="{{ url_for('static', filename='fonts.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='ericoc.css') }}" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="apple-touch-icon" href="{{ url_for('static', filename='icon.png') }}">
     </head>
     <body>
         <div id="logo">
