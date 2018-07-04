@@ -17,7 +17,7 @@ def specific(page):
         if page in pages:
             return jawn(page=page, title=pages[page])
         else:
-            return page_not_found(page);
+            return page_not_found(page)
 
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
