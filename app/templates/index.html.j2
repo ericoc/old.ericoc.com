@@ -6,6 +6,12 @@
         <meta name="author" content="Eric O'Callaghan">
         <meta name="description" content="Eric O'Callaghan{% if title %} - {{ title }}{% endif %}">
         <meta name="keywords" content="Eric O'Callaghan, Eric OCallaghan, EricOC, Eric OC">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Eric O'Callaghan">
+        <meta property="og:title" content="Eric O'Callaghan{% if title %} - {{ title }}{% endif %}">
+        <meta property="og:description" content="Eric O'Callaghan{% if title %} - {{ title }}{% endif %}">
+        <meta property="og:url" content="{% if title %}{{ url_for('specific', page=page, _external=True) }}{% else %}{{ url_for('index', _external=True) }}{% endif %}">
+        <meta property="og:image" content="{{ url_for('static', filename='icon.png', _external=True) }}">
         <title>Eric O'Callaghan{% if title %} - {{ title }}{% endif %}</title>
         <link href="{{ url_for('static', filename='fonts.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ url_for('static', filename='ericoc.css') }}" rel="stylesheet" type="text/css">
