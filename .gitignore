@@ -1,8 +1,10 @@
 __pycache__
-~*
-*.save
-.DS_Store
 venv/
+*.gz
 *.pyc
-.idea
-.reload
+*.save
+*.sh
+*.sql
+.*
+*~
+!.gitignore
