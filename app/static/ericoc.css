@@ -1,9 +1,36 @@
+
+body {
+    background-color:    #fff;
+    font-family:         'Open Sans', sans-serif;
+}
+
 h1 {
     margin:             auto;
     text-align:         center;
     font-size:          5em;
     color:              #000;
     text-decoration:    none;
+}
+
+h2 {
+    font-family:    'Roboto';
+    font-size:      1.25em;
+}
+
+h3 {
+    font-family:    'Roboto';
+    font-size:      1.1em;
+    color:          #000;
+}
+
+hr {
+    border:    1px solid #104e8b;
+    color:     #104e8b;
+    width:     75%;
+}
+
+p, li {
+    margin-left:    3%;
 }
 
 #logo {
@@ -82,32 +109,6 @@ h1 {
 
 #reslinks {
     text-align:    center;
-}
-
-body {
-    background-color:    #fff;
-    font-family:         'Open Sans', sans-serif;
-}
-
-h2 {
-    font-family:    'Roboto';
-    font-size:      1.25em;
-}
-
-h3 {
-    font-family:    'Roboto';
-    font-size:      1.1em;
-    color:          #000;
-}
-
-hr {
-    border:    1px solid #104e8b;
-    color:     #104e8b;
-    width:     75%;
-}
-
-p, li {
-    margin-left:    3%;
 }
 
 .projspecs {
