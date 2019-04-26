@@ -74,6 +74,11 @@ h1 {
     color:    #104e8b;
 }
 
+#content h2:target::before {
+    color:      #4da0ff;
+    content:    "►";
+}
+
 #reslinks {
     text-align:    center;
 }
