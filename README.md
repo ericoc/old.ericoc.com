@@ -1,5 +1,7 @@
-This repository is basically just me playing around learning how to use nginx/uwsgi with python3 (and specifically flask so far) on the web.
+# [ericoc.com](https://ericoc.com/)
 
-I re-wrote my website ([ericoc.com](https://ericoc.com/)) with Python using Flask instead of [the original PHP](https://github.com/ericoc/old.ericoc.com/).
+This repository started with me just playing around learning how to use nginx/uwsgi with Python (specifically Flask).
+
+In the past, [my website was primarily PHP](https://github.com/ericoc/old.ericoc.com/), but I feel like I'm getting the hang of Python and appreciate Flask a lot so I'm going to stick with this new version!
 
 Thanks to [Eliz](https://github.com/Omeryl/) for initial configuration help!!!
