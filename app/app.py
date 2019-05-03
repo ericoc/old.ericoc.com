@@ -22,7 +22,7 @@ def specific(page):
 
         # Only pass page information to the main template function if it is a valid page from our list
         if page in pages:
-            return jawn(page=page, title=pages[page])
+            return index(page=page, title=pages[page])
 
         # Otherwise, pass the page information to the 404 error handler
         else:
