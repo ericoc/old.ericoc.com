@@ -7,7 +7,7 @@ eric@ericoc.com
 
 Background
 
-I am seeking a technical role, within Philadelphia, at a company with a positive and fun culture that allows me to continuously learn while also making use of my years of Linux operations experience. I am passionate when it comes to troubleshooting, debugging, and working through production issues proving that I am an excellent systems administrator. I truly love working on the command-line.
+I am seeking a technical role, within Philadelphia, at a company with a positive and fun culture that allows me to continuously learn while also making use of my years of Linux operations experience.
 
 
 Personal Projects
@@ -18,7 +18,7 @@ Indego Bike Share Python Library
 - Built a searchable, dynamic website using my custom library and Flask to display the availability of bicycles and docks at all of the 130+ bike share stations throughout the City of Philadelphia
 - Store JSON in PostgreSQL via SQLAlchemy in order to generate charts of historical bicycle availability using jQuery and Highcharts
 
-Zeromon.io
+Zeromon
 
 - Built a repository of Ansible roles to set up a fully running Zabbix server installation with the deployment of a new Amazon EC2 instance or DigitalOcean Droplet
 - Using cloud-init in combination with Zabbix, this collection of Ansible roles deploys Ubuntu 18.04 with a working Postfix, MySQL, Apache, and Zabbix server to allow users to quickly and easily get started using Zabbix with little to no effort via an Amazon AMI or from a DigitalOcean Marketplace "One-Click"
