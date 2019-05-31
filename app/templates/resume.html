@@ -6,6 +6,7 @@
               {%- endfor -%}
             </div>
             <br><hr><br>
+
             <h2>Eric O'Callaghan</h2>
             <p>
                 Philadelphia, PA<br>
@@ -13,18 +14,49 @@
                 <a href="tel:1-757-742-3742">(757) 742-3742</a><br>
                 <a href="https://github.com/ericoc/" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/ericoc/" target="_blank">LinkedIn</a><br>
             </p>
+
             <h3>Background</h3>
             <p>
                 I am seeking a technical role, within Philadelphia, at a company with a positive and fun culture that allows me to continuously learn while also making use of my years of Linux operations experience.
-                I am passionate when it comes to troubleshooting, debugging, and working through production issues proving that I am an excellent systems administrator.
-                I truly love working on the command-line.
             </p>
-            <h3>Experience</h3>
+
+            <h3 id="projects">Personal Projects</h3>
+            <p>
+                <a id="indego" href="https://github.com/ericoc/indego-py-lib" target="_blank">Indego Bike Share Python Library</a>
+            </p>
+            <ul>
+                <li>Created a Python library to interact with the RideIndego.com API to retrieve bicycle and station availability; which is available via PyPi as "indego"</li>
+                <li>Built a searchable, dynamic website using my custom library and Flask to display the availability of bicycles and docks at all of the 130+ bike share stations throughout the City of Philadelphia</li>
+                <li>Store JSON in PostgreSQL via SQLAlchemy in order to generate charts of historical bicycle availability using jQuery and Highcharts</li>
+            </ul>
+
+            <p>
+                <a id="zeromon" href="https://github.com/zeromonio/zeromon" target="_blank">Zeromon</a>
+            </p>
+            <ul>
+                <li>Built a repository of Ansible roles to set up a fully running Zabbix server installation with the deployment of a new Amazon EC2 instance or DigitalOcean Droplet</li>
+                <li>Using cloud-init in combination with Zabbix, this collection of Ansible roles deploys Ubuntu 18.04 with a working Postfix, MySQL, Apache, and Zabbix server to allow users to quickly and easily get started using Zabbix with little to no effort via an Amazon AMI or from a DigitalOcean Marketplace "One-Click"</li>
+            </ul>
+
+            <p>
+                <a id="alexaseizure" href="https://github.com/zeromonio/zeromon" target="_blank">Amazon Alexa Skill for SeizureTracker.com</a>
+            </p>
+            <ul>
+                <li>Worked with the founder of SeizureTracker to create an Amazon Alexa skill which allows users to record epileptic seizure activity by voice</li>
+                <li>Implemented Bearer Token OAuth via PHP to allow users to associate their Amazon Echo to their SeizureTracker.com account</li>
+                <li>Created a small PHP application to interact with the SeizureTracker API appropriately, based upon various voice commands sent as JSON via signed HTTPS POST requests from Amazon</li>
+            </ul>
+
+            <h3 id="work">Work Experience</h3>
             <p>
                 <a id="jefferson" href="https://www.jefferson.edu/" target="_blank">Thomas Jefferson University Hospital (IS&T)</a><br>
                 <i>Linux Systems Administrator</i><br>
-                Philadelphia, PA (April 2018)
+                Philadelphia, PA (April 2018 - Present)
             </p>
+            <ul>
+                <li>Assist a small team in maintaining the configuration, reliability, and security of approximately 500 very unique Linux servers which host research, medical, pharmaceutical and academic data for the hospital and university</li>
+            </ul>
+
             <p>
                 <a id="comcast" href="https://corporate.comcast.com/" target="_blank">Comcast Corporation</a><br>
                 <i>Linux Engineer</i><br>
@@ -38,6 +70,7 @@
                 <li>Regularly tested TCP/IP connectivity between different VLANs, networks, and data centers throughout the country which required opening JIRA tickets to request firewall changes that I would then validate were completed successfully</li>
                 <li>Ensured consistency of firewall rules as well as server and network settings across hosts in thirty different data centers</li>
             </ul>
+
             <p>
                 <a id="sidecar" href="https://hello.getsidecar.com/" target="_blank">Sidecar Interactive</a><br>
                 <i>Linux Systems Administrator</i><br>
@@ -48,8 +81,9 @@
                 <li>Maintained multiple database environments that included MySQL replication between co-located Dell and HP hardware, running Ubuntu, and Amazon Web Services (AWS)</li>
                 <li>Wrote and tested documentation on the processes necessary to restore internal Percona XtraDB database backups</li>
                 <li>Created and open-sourced a Bash shell script that instantly forwards Zabbix alerts to Slack, which I am proud to say is now used by many members of the Zabbix and Slack online communities</li>
-                <li>Automated deployment of in-house PHP application via “chatops”. In efforts with a co-worker, we set up RunDeck to trigger requests to the Ansible Tower API allowing quick and easy deployment at any time from our teams shared Slack chat</li>
+                <li>Automated deployment of in-house PHP application via "chatops". In efforts with a co-worker, we set up RunDeck to trigger requests to the Ansible Tower API allowing quick and easy deployment at any time from our teams shared Slack chat</li>
             </ul>
+
             <p>
                 <a id="urbn" href="https://www.urbn.com/" target="_blank">URBN, Inc</a><br>
                 <i>Linux Systems Administrator</i><br>
@@ -62,6 +96,7 @@
                 <li>Deployed internal DNS resolvers within the e-commerce network to improve response times for all website visitors and transactions while also enhancing network security</li>
                 <li>Used Zabbix JMX monitoring to graph HTTP request and response times</li>
             </ul>
+
             <p>
                 <a id="linode" href="https://www.linode.com/" target="_blank">Linode, LLC</a><br>
                 <i>Linux Technical Support</i><br>
@@ -70,12 +105,14 @@
             <ul>
                 <li>Provided quick and helpful technical support to a significant number of customers via telephone, e-mail, and support tickets which involved troubleshooting a wide variety of issues including routing inconsistencies between multiple international data centers</li>
             </ul>
+
             <h3>Certifications</h3>
             <ul>
                 <li>CompTIA Security+, Network+, and Linux+</li>
                 <li>Hurricane Electric IPv6 Sage</li>
                 <li>Cisco Certified Entry Networking Technician (CCENT)</li>
             </ul>
+
             <h3>Education</h3>
             <p>
                 ECPI University<br>
