@@ -2,7 +2,7 @@ from flask import Flask, render_template, send_from_directory, request, url_for
 
 # List of valid pages and their proper titles
 pages = {
-            'projects'  :   'Projects',
+#            'projects'  :   'Projects',
             'about'     :   'About',
             'resume'    :   'Résumé'
         }
